@@ -17,13 +17,58 @@ body {
     margin: 0;
 }
 #board {
-    display: flex;
     margin: 2rem 1rem;
     position: relative;
 }
+.nav {
+    display: table;
+    margin: 0 auto;
+}
+#rand, #reset, #restart {
+    margin: 2rem 1rem;
+    text-align: center;
+    display: inline-block;
+    padding: .7em 2rem;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+#rand {
+    background: #27a11b;
+    border-bottom: 4px solid #1a7b11;
+    color: #fff;
+}
+#rand:hover {
+    background: #1d8b13;
+}
+#reset {
+    background: #979797;
+    border-bottom: 4px solid #656565;
+    color: #fff;
+}
+#reset:hover {
+    background: #7f7f7f;
+}
+#restart {
+    background: #363636;
+    border-bottom: 4px solid #1d1d1d;
+    color: #fff;
+}
+#restart:hover {
+    background: #242424;
+}
+#result {
+    display: table;
+    margin: 0 auto 2rem;
+    font-size: 2rem;
+    height: 3rem;
+}
+.table {
+    display: flex;
+}
 .block {
     width: 80px;
-    margin: 0 5px;
+    margin: 0 10px;
     border-radius: 0 0 40px 40px;
     overflow: hidden;
     transition: transform ease 200ms, box-shadow ease 200ms;
@@ -63,9 +108,36 @@ body {
 }
 [data-item="a"] {background: #ecc639;}
 [data-item="a"]::after {content: 'A'}
+
 [data-item="b"] {background: #8304a7;}
 [data-item="b"]::after {content: 'B'}
+
 [data-item="c"] {background: #28a106;}
 [data-item="c"]::after {content: 'C'}
+
 [data-item="d"] {background: #236dee;}
 [data-item="d"]::after {content: 'D'}
+
+[data-item="e"] {background: #e50a36;}
+[data-item="e"]::after {content: 'E'}
+
+[data-item="f"] {background: #009a7c;}
+[data-item="f"]::after {content: 'F'}
+
+[data-item="g"] {background: #000000;}
+[data-item="g"]::after {content: 'G'}
+
+[data-item="h"] {background: #c77272;}
+[data-item="h"]::after {content: 'H'}
+
+[data-item="i"] {background: #ef530b;}
+[data-item="i"]::after {content: 'I'}
+
+[data-item="j"] {background: #7e9072;}
+[data-item="j"]::after {content: 'j'}
+
+[data-item="k"] {background: #660038;}
+[data-item="k"]::after {content: 'K'}
+
+[data-item="l"] {background: #b4b4b4;}
+[data-item="l"]::after {content: 'L'}
